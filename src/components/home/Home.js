@@ -5,6 +5,7 @@ import "./Home.scss";
 import image1 from "../../assets/landingImage1.png";
 import play from "../../assets/googlePlay.png";
 import serviceflowImage from "../../assets/serviceflow.svg";
+import reminderImage from "../../assets/reminderimage.svg";
 
 const Body = ({ setEmail, email }) => (
   <div className="main">
@@ -78,6 +79,18 @@ const Body = ({ setEmail, email }) => (
 
     <div className="flex justify-center">
       <img src={serviceflowImage} />
+    </div>
+
+    <div className="flex bg-primary py-32 justify-center items-center">
+      <div className="w-4/5 flex">
+        <div className="flex justify-around items-center">
+          <img className="w-2/5" src={reminderImage} />
+          <h1 className="w-2/5 text-4.5xl text-white">
+            PUT A REMINDER OF YOUR EVERYDAY TRANSACTIONS INTO SAVINGS AND EARN
+            IN DOLLARS DAILY
+          </h1>
+        </div>
+      </div>
     </div>
   </div>
 );
