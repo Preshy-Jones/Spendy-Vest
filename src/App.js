@@ -9,9 +9,13 @@ import FAQ from "./screens/FAQ";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <FAQ />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
