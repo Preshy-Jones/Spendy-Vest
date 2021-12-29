@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#4BA67B",
+        textshade: "#2F3733",
+        textash: "#979797",
         secondary2: "#004858",
         secondary: "#001D4F",
         third: "#6CCEE31A",
@@ -38,6 +40,7 @@ module.exports = {
         body: ["Montserrat"],
         poppins: ["'Poppins', sans-serif"],
         sans2: ["roboto"],
+        mukta: ["Mukta"],
       },
       fontSize: {
         xxxs: ["0.5rem", { lineHeight: "0.7rem" }],
@@ -49,8 +52,8 @@ module.exports = {
         "6.5xl": ["4rem", { lineHeight: "6rem" }],
       },
       boxShadow: {
-        card: "0px 4px 10px 5px rgba(230, 230, 230, 0.5)",
-        bigCard: "0px 4px 10px 5px rgba(219, 219, 219, 0.25)",
+        card: "0px 6px 22px rgba(216, 235, 226, 0.5)",
+        bigCard: "6px 0px 22px rgba(216, 235, 226, 0.5)",
       },
       borderRadius: {
         primary: "1.875rem",
@@ -105,6 +108,7 @@ module.exports = {
       },
       height: {
         primary: "29.375rem",
+        bigCard: "26.125rem",
         secondary: "80vh",
       },
       minHeight: {
