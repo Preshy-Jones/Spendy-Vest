@@ -13,7 +13,18 @@ import moneybar from "../../assets/moneybar.svg";
 import estate from "../../assets/estate.svg";
 import icontoggle from "../../assets/Toggle.svg";
 import phone from "../../assets/phone.svg";
+import phone2 from "../../assets/phone2.svg";
+import phone2frame from "../../assets/phone2frame.svg";
+import phone3 from "../../assets/phone3.svg";
+import phone4 from "../../assets/phone4.svg";
 import phonebg from "../../assets/phonebg.svg";
+import phonebg2 from "../../assets/phonebg2.svg";
+import phonebg3 from "../../assets/phonebg3.svg";
+import phonebg4 from "../../assets/phonebg4.svg";
+import ourpartners from "../../assets/ourpartners.svg";
+import rise from "../../assets/rise.svg";
+import paystack from "../../assets/paystack.svg";
+import okra from "../../assets/okra.svg";
 
 const Body = ({ setEmail, email }) => (
   <div className="main font-mukta">
@@ -171,9 +182,9 @@ const Body = ({ setEmail, email }) => (
       </div>
     </div>
     <div>
-      <div>
-        <div className="flex">
-          <div>
+      <div className="flex justify-end h-sections">
+        <div className="w-fourteenth flex justify-between">
+          <div className="w-2/5 flex flex-col justify-center">
             <h1 className="text-2xl text-textash">
               GROW YOUR SAVINGS WHILE SPENDING
             </h1>
@@ -182,10 +193,150 @@ const Body = ({ setEmail, email }) => (
               YOU INTEREST DAILY IN DOLLARS
             </p>
           </div>
-          <div>
-            <img src={phone} alt="" />
-            <img src={phonebg} alt="" />
+          <div className="w-2/5 relative">
+            <img
+              className="absolute w-full h-full left-0 top-0"
+              src={phonebg}
+              alt=""
+            />
+            <img className="z-10 absolute top-40" src={phone} alt="" />
           </div>
+        </div>
+      </div>
+      <div className="flex justify-start h-sections">
+        <div className="w-fourteenth flex justify-between">
+          <div className="w-2/5 relative">
+            <img
+              className="absolute w-full h-full left-0 top-0"
+              src={phonebg2}
+              alt=""
+            />
+            <div className="relative top-0 left-40">
+              <img className="absolute phone2frame" src={phone2frame} alt="" />
+              <img className="absolute phone2 " src={phone2} alt="" />
+            </div>
+          </div>
+          <div className="w-2/5 flex flex-col justify-center">
+            <h1 className="text-2xl text-textash">
+              LOCK YOUR ROUND UPS TO GROW AND EARN CASH EVERY MONTH
+            </h1>
+            <p className="text-4.5xl font-extrabold text-left">
+              YOU ARE REWARDED WITH CASH EVERY MONTH YOU LOCK YOUR ROUND UPS AND
+              ALLOW IT GROW
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-end h-sections">
+        <div className="w-fourteenth flex justify-between">
+          <div className="w-2/5 flex flex-col justify-center">
+            <h1 className="text-2xl text-textash text-left">
+              INVITE YOUR FRIENDS AND GET AMAZING COLLECTIBLES
+            </h1>
+            <p className="text-4.5xl font-extrabold text-left">
+              GET AMAZING COLLECTIBLES LIKE AIRTIME, DATA AND LOTS MORE
+              EVERYTIME YOU INVITE YOUR FRIENDS TO JOIN SPENDYVEST
+            </p>
+          </div>
+          <div className="w-2/5 relative">
+            <img
+              className="absolute w-full h-full left-0 top-0"
+              src={phonebg3}
+              alt=""
+            />
+            <img className="z-10 absolute top-10" src={phone3} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-start h-sections">
+        <div className="w-fourteenth flex justify-between">
+          <div className="w-2/5 relative">
+            <img
+              className="absolute w-full h-full left-0 top-0"
+              src={phonebg4}
+              alt=""
+            />
+            <img className="z-10 absolute top-10 left-40" src={phone4} alt="" />
+          </div>
+          <div className="w-2/5 flex flex-col justify-center text-left">
+            <h1 className="text-2xl text-textash">
+              YOU HAVE FULL CONTROL OVER YOUR ACCOUNT
+            </h1>
+            <p className="text-4.5xl font-extrabold text-left">
+              TRACK THE ACTIVITIES ON YOUR ACCOUNT IN THE APP AND WITHDRAW YOUR
+              FUNDS WITH INTEREST AT ANY TIME
+            </p>
+            <h1 className="text-2xl text-textash mt-6">JOIN THE WAITLIST </h1>
+            <form className="flex flex-col items-start ">
+              <input
+                className="w-fifteenth h-12 px-3 rounded-md border mt-2 border-fourth"
+                type="text"
+                placeholder="Email address"
+              />
+              <button
+                className="bg-primary w-fifteenth rounded-md mt-4 text-white py-2 text-base"
+                type="submit"
+              >
+                Get In
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 className="text-textshade font-extrabold text-center text-4.5xl">
+        FAQ'S
+      </h1>
+      <div className="flex justify-center">
+        <div className="flex flex-col w-4/5">
+          <div className="shadow-faqcards rounded-md py-5 px-4">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold">
+                Is it safe to connect my bank account to Spendyvest?
+              </h2>
+              <i class="fas fa-angle-up text-2xl font-bold"></i>
+            </div>
+            <div className=" h-px my-6 w-full bg-divider"></div>
+            <p className="text-textash text-left text-xl">
+              Yes, Spendyvest does not have access to your bank account. It only
+              gets the debit confirmations from your bank when you spend to do
+              the roundups.
+            </p>
+          </div>
+          <div className="shadow-faqcards rounded-md py-5 px-4">
+            <div className="flex justify-between">
+              <h2 className="text-2xl font-bold">
+                Can I withdraw the roundups when I want them?
+              </h2>
+              <i class="fas fa-angle-up text-2xl font-bold"></i>
+            </div>
+            <div className=" h-px my-6 w-full bg-divider"></div>
+            <p className="text-textash text-left text-xl">
+              Yes, you can withdraw your roundup savings anytime you want and
+              within 24hours, it will be sent to your bank account.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        className="bg-primary w-fifteenth rounded-md mt-4 text-white py-2 text-base"
+        type="submit"
+      >
+        VIEW ALL FAQS
+      </button>
+    </div>
+
+    <div className="bg-secondary py-6">
+      <div className="flex justify-center">
+        <img src={ourpartners} alt="" />
+      </div>
+      <div className="flex justify-center">
+        <div className="flex w-4/5 mt-2 justify-around items-center">
+          <img src={paystack} alt="" />
+          <img src={okra} alt="" />
+          <img src={rise} alt="" />
         </div>
       </div>
     </div>

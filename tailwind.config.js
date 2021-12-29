@@ -7,8 +7,9 @@ module.exports = {
         primary: "#4BA67B",
         textshade: "#2F3733",
         textash: "#979797",
+        divider: "#F1F1F1",
         secondary2: "#004858",
-        secondary: "#001D4F",
+        secondary: "#E0FFF0",
         third: "#6CCEE31A",
         fourth: "#C4C4C4",
         fifth: "#323232",
@@ -54,6 +55,7 @@ module.exports = {
       boxShadow: {
         card: "0px 6px 22px rgba(216, 235, 226, 0.5)",
         bigCard: "6px 0px 22px rgba(216, 235, 226, 0.5)",
+        faqcards: "6px 0px 22px rgba(216, 235, 226, 0.5)",
       },
       borderRadius: {
         primary: "1.875rem",
@@ -105,11 +107,15 @@ module.exports = {
         eleventh: "30%",
         twelfth: "40vw",
         thirteenth: "25vw",
+        fourteenth: "90%",
+        fifteenth: "22.4375rem",
       },
       height: {
         primary: "29.375rem",
         bigCard: "26.125rem",
         secondary: "80vh",
+        sections: "46.875rem",
+        partners: "9.625rem",
       },
       minHeight: {
         primary: "41.5rem",
