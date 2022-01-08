@@ -10,6 +10,7 @@ module.exports = {
         textash2: "#7A7B7B",
         textash3: "#5F6160",
         divider: "#F1F1F1",
+        numbers: "#F2C438",
         secondary2: "#004858",
         secondary: "#E0FFF0",
         third: "#6CCEE31A",
@@ -114,6 +115,8 @@ module.exports = {
         thirteenth: "25vw",
         fourteenth: "90%",
         fifteenth: "22.4375rem",
+        sixteenth: "10.9375rem",
+        seventeenth: "65%",
       },
       height: {
         primary: "29.375rem",
@@ -122,6 +125,9 @@ module.exports = {
         sections: "46.875rem",
         partners: "9.625rem",
         trackinglist: "3.5625rem",
+        card: "18.53875rem",
+        subcard: "15.82rem",
+        subsubcard: "17.055625rem",
       },
       minHeight: {
         primary: "41.5rem",

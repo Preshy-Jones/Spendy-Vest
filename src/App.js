@@ -5,6 +5,7 @@ import FAQ from "./screens/FAQ/FAQ";
 import Tracklist from "./screens/tracklist/Tracklist";
 import Terms from "./screens/Terms";
 import Privacy from "./screens/Privacy";
+import Invite from "./screens/Invite";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/">
-            <Terms />
+            <Invite />
           </Route>
         </Switch>
       </Router>
