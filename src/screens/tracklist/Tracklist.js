@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const Body = () => (
-  <div className="w-4/5 text-mukta">
+  <div className="w-4/5 font-mukta">
     <div className="w-full">
       <h1 className="text-4.5xl font-semibold w-full text-left">
         REFERRAL TRACK LIST

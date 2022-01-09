@@ -6,7 +6,7 @@ import { Fragment } from "react";
 
 function Signupsuccess() {
   const Body = () => (
-    <div className="flex justify-center">
+    <div className="flex justify-center font-mukta">
       <div className="flex flex-col items-center text-mukta">
         <img src={congratulations} alt="" />
         <h1 className="text-textshade font-extrabold text-4.5xl">

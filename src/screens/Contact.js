@@ -16,7 +16,7 @@ const Contact = () => {
       e.preventDefault();
     };
     return (
-      <div className="text-mukta">
+      <div className="font-mukta">
         <div className="flex justify-end">
           <div className="flex flex-col-reverse lg:flex-row items-center w-fourteenth">
             <div>

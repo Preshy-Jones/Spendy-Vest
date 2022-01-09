@@ -21,9 +21,12 @@ const Header = () => {
   return (
     <div id="header-container">
       <div id="inner-header">
-        <div id="logo">
-          <img id="image" src={logo} alt="icon" />
-        </div>
+        <Link style={{ listStyle: "none", textDecorationLine: "none" }} to="/">
+          <div id="logo">
+            <img id="image" src={logo} alt="icon" />
+          </div>
+        </Link>
+
         <div id="menu-item">
           {menu && <img id="image2" src={menus} alt="icon" />}
           <div id="menu-list">
@@ -35,9 +38,33 @@ const Header = () => {
                 Home
               </Link>
             </div>
-            <div className="menu-text">About</div>
-            <div className="menu-text">Contact</div>
-            <div className="menu-text">FAQ</div>
+            <div className="menu-text">
+              {" "}
+              <Link
+                style={{ listStyle: "none", textDecorationLine: "none" }}
+                to="/about"
+              >
+                About
+              </Link>
+            </div>
+            <div className="menu-text">
+              {" "}
+              <Link
+                style={{ listStyle: "none", textDecorationLine: "none" }}
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </div>
+            <div className="menu-text">
+              {" "}
+              <Link
+                style={{ listStyle: "none", textDecorationLine: "none" }}
+                to="/faq"
+              >
+                FAQ
+              </Link>
+            </div>
           </div>
         </div>
       </div>

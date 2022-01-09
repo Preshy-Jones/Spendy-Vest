@@ -3,8 +3,10 @@ import Header from "../Header";
 import Footer from "../Footer";
 import "./Home.scss";
 import image1 from "../../assets/landingImage1.png";
-import play from "../../assets/googlePlay.png";
+import googleplay from "../../assets/googleplay.svg";
+import appstore from "../../assets/appstore.svg";
 import serviceflowImage from "../../assets/serviceflow.svg";
+import serviceflowImagemobile from "../../assets/serviceflowmobile.svg";
 import reminderImage from "../../assets/reminderimage.svg";
 import house from "../../assets/house.svg";
 import savebutton from "../../assets/savebutton.svg";
@@ -25,73 +27,88 @@ import ourpartners from "../../assets/ourpartners.svg";
 import rise from "../../assets/rise.svg";
 import paystack from "../../assets/paystack.svg";
 import okra from "../../assets/okra.svg";
+import manwithpig from "../../assets/manwithpig.svg";
 
 const Body = ({ setEmail, email }) => (
   <div className="main font-mukta">
-    <div className="firstDiv">
-      <div className="topTextContainer">
-        <h2>
-          SAVE IN BITS <br />
-          EVERY
-          {/* <h1 style={{ backgroundColor: "#F2C438" }}> */}
-          TIME YOU SPEND.
-          <br /> EARN DOLLARS DAILY.
-        </h2>
-        <h4>
-          Take the stress out of your savings. Get to round off your everyday
-          spendings and save in bits whenever you spend, investing them to grow
-          daily in dollars.
-        </h4>
-        <h3>JOIN OUR WAITLIST TODAY</h3>
-        <h4>
-          Exclusive first access to app by early users, sign up now. Get a share
-          of spendyvest You can get more shares when you invite your friends to
-          join the waitlist and win an amazing gift.
-        </h4>
-        <form>
-          <input type="text" id="name" name="name" placeholder="Full Name" />
-
-          <input id="phone" name="phone" placeholder="Enter Phone Number." />
-          <input
-            id="phone"
-            name="email"
-            value={email}
-            placeholder="Enter Email."
-            onChange={(email) => setEmail(email.target.value)}
-          />
-          <div className="btnDiv">
-            <button className="button1" type="button">
-              <h3>Get In</h3>
-            </button>
-            <button type="button" className="button2">
-              <h3>Check your standing</h3>
-            </button>
-          </div>
-
-          <div className="btnDivApp">
-            <button className="button1" type="button">
-              <img src={play} className="imgBtn" />
-            </button>
-            <button type="button" className="button2">
-              Check your standing
-            </button>
-            {/* second btn row */}
-          </div>
-        </form>
+    <div className="flex md:justify-end">
+      <div className="flex flex-col lg:flex-row lg:items-center w-fourteenth">
+        <div className="">
+          <h2 className="text-5.1xl text-textshade font-extrabold text-left">
+            SAVE IN BITS <br />
+            EVERY
+            {/* <h1 style={{ backgroundColor: "#F2C438" }}> */}
+            TIME YOU SPEND.
+            <br /> EARN DOLLARS DAILY.
+          </h2>
+          <h4 className="text-textash text-base">
+            Take the stress out of your savings. Get to round off your everyday
+            spendings and save in bits whenever you spend, investing them to
+            grow daily in dollars.
+          </h4>
+          <h3 className="text-left text-textshade font-bold text-2xl">
+            JOIN OUR WAITLIST TODAY
+          </h3>
+          <h4 className="text-textash text-base text-left">
+            Exclusive first access to app by early users, sign up now. Get a
+            share of spendyvest You can get more shares when you invite your
+            friends to join the waitlist and win an amazing gift.
+          </h4>
+          <form className="flex flex-col mt-8">
+            <input
+              type="text"
+              className="h-12 w-fifteenth text-base rounded-md border border-fourth px-2 mb-10"
+              placeholder="Full Name"
+            />
+            <input
+              className="h-12 w-fifteenth text-base rounded-md border border-fourth px-2 mb-10"
+              placeholder="Enter Phone Number."
+            />
+            <input
+              id="phone"
+              className="h-12 w-fifteenth text-base rounded-md border border-fourth px-2"
+              placeholder="Enter Email."
+              onChange={(email) => setEmail(email.target.value)}
+            />
+            <div className="flex w-fifteenth justify-between mt-12">
+              <button
+                className="bg-primary py-3 w-40 rounded-md text-base text-white"
+                type="button"
+              >
+                Get In
+              </button>
+              <button
+                type="button"
+                className="bg-white border border-primary rounded-md py-3 w-40 text-primary text-base"
+              >
+                Check your standing
+              </button>
+            </div>
+            <div className="flex mt-4 w-fifteenth justify-between">
+              <button
+                className="bg-primary py-2 rounded-md pl-3 w-40"
+                type="button"
+              >
+                <img src={googleplay} className="" />
+              </button>
+              <button
+                className="bg-primary py-2 rounded-md pl-3 w-40"
+                type="button"
+              >
+                <img src={appstore} className="" />
+              </button>
+            </div>
+          </form>
+        </div>
+        {/* <div className="topRightDiv">
+        </div> */}
+        <img src={manwithpig} alt="landingImage1" loading="lazy"></img>
       </div>
-      {/* <div className="topRightDiv">
-
-      </div> */}
-      <img
-        src={image1}
-        alt="landingImage1"
-        loading="lazy"
-        className="imageTop1"
-      ></img>
     </div>
 
     <div className="flex justify-center">
-      <img src={serviceflowImage} />
+      <img className="hidden sm:block" src={serviceflowImage} />
+      <img className="block sm:hidden" src={serviceflowImagemobile} />
     </div>
 
     {/* section */}
@@ -109,72 +126,74 @@ const Body = ({ setEmail, email }) => (
     <div>
       <div className="flex justify-center">
         <div className="flex w-4/5">
-          <h1 className="text-4.5xl md:w-2/5 text-left text-textshade font-mukta font-extrabold ">
+          <h1 className="text-4.5xl lg:w-2/5 text-center text-textshade font-mukta font-extrabold ">
             IN THREE SIMPLE STEPS, YOU START USING THE APP
           </h1>
         </div>
       </div>
-      <div className="cardContainer">
-        <div className="card  shadow-bigCard flex flex-col justify-between items-start py-6 px-8">
-          <div className="flex flex-col justify-between items-start h-full">
-            <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
-              1
-            </span>
-            <h2 className="text-xl font-bold my-4">Link your bank account</h2>
-            <p className="text-left text-base font-normal text-textash">
-              Download the mobile app and link your already existing bank
-              account(s).
-            </p>
-            <div className="flex w-full shadow-card items-start pt-1 mt-28">
-              <img src={house} alt="" />
-              <h2 className="text-base text-textash ml-4 mr-auto">
-                Spendyvest Bank |
-              </h2>
-              <div>
-                <img src={savebutton} alt="" />
-                <img src={feather} alt="" />
+      <div className="flex justify-center">
+        <div className="w-4/5 flex flex-col lg:flex-row">
+          <div className="shadow-bigCard lg:w-eleventh card flex flex-col justify-between items-start py-6 px-8">
+            <div className="flex flex-col justify-between items-start h-full">
+              <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
+                1
+              </span>
+              <h2 className="text-xl font-bold my-4">Link your bank account</h2>
+              <p className="text-left text-base font-normal text-textash">
+                Download the mobile app and link your already existing bank
+                account(s).
+              </p>
+              <div className="flex w-full shadow-card items-start pt-1 mt-28">
+                <img src={house} alt="" />
+                <h2 className="text-base text-textash ml-4 mr-auto">
+                  Spendyvest Bank |
+                </h2>
+                <div>
+                  <img src={savebutton} alt="" />
+                  <img src={feather} alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="card  shadow-bigCard flex flex-col justify-between items-start py-6 px-8">
-          <div className="flex flex-col justify-between items-start h-full">
-            <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
-              2
-            </span>
-            <h2 className="text-xl font-bold my-4">Set a Roundup</h2>
-            <p className="text-left text-base font-normal text-textash">
-              Select your preferred roundups for whenever you spend from your
-              bank account it could be to the nearest tenth or hundredth.
-            </p>
-            <div className="flex w-full shadow-card items-start pt-1 mt-28">
-              <img className="mr-7" src={moneybar} alt="" />
-              <div className="pt-4">
-                <img src={savebutton} alt="" />
-                <img src={feather} alt="" />
+          <div className="shadow-bigCard lg:w-eleventh card flex flex-col justify-between items-start py-6 px-8">
+            <div className="flex flex-col justify-between items-start h-full">
+              <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
+                2
+              </span>
+              <h2 className="text-xl font-bold my-4">Set a Roundup</h2>
+              <p className="text-left text-base font-normal text-textash">
+                Select your preferred roundups for whenever you spend from your
+                bank account it could be to the nearest tenth or hundredth.
+              </p>
+              <div className="flex w-full shadow-card items-start pt-1 mt-28">
+                <img className="mr-7" src={moneybar} alt="" />
+                <div className="pt-4">
+                  <img src={savebutton} alt="" />
+                  <img src={feather} alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="card  shadow-bigCard flex flex-col justify-between items-start py-6 px-8">
-          <div className="flex flex-col justify-between items-start h-full">
-            <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
-              3
-            </span>
-            <h2 className="text-xl font-bold my-4">Invest your funds</h2>
-            <p className="text-left text-base font-normal text-textash">
-              Select your choice asset to invest your funds in the app, the app
-              rounds up your every spendings to your preferred roundups and
-              deducts it, investing them into your choice asset growing daily in
-              dollars.
-            </p>
-            <div className="flex w-full shadow-card items-start pt-1 mt-28">
-              <img src={estate} alt="" />
-              <h2 className="text-base text-textash ml-4 mr-auto">
-                Real estate
-              </h2>
-              <div>
-                <img src={icontoggle} alt="" />
+          <div className="shadow-bigCard lg:w-eleventh card flex flex-col justify-between items-start py-6 px-8">
+            <div className="flex flex-col justify-between items-start h-full">
+              <span class=" bg-primary text-white text-2xl py-0.5 px-3.5 rounded-secondary">
+                3
+              </span>
+              <h2 className="text-xl font-bold my-4">Invest your funds</h2>
+              <p className="text-left text-base font-normal text-textash">
+                Select your choice asset to invest your funds in the app, the
+                app rounds up your every spendings to your preferred roundups
+                and deducts it, investing them into your choice asset growing
+                daily in dollars.
+              </p>
+              <div className="flex w-full shadow-card items-start pt-1 mt-28">
+                <img src={estate} alt="" />
+                <h2 className="text-base text-textash ml-4 mr-auto">
+                  Real estate
+                </h2>
+                <div>
+                  <img src={icontoggle} alt="" />
+                </div>
               </div>
             </div>
           </div>

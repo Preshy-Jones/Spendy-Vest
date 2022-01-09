@@ -16,7 +16,7 @@ const FAQ = () => {
     five: false,
   });
   const Body = () => (
-    <div id="home-container3">
+    <div id="home-container3" className="font-mukta">
       <div id="main-about-container2">
         <div id="about-text2">
           FREQUENTLY ASKED <br /> QUESTIONS

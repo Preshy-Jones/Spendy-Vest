@@ -13,7 +13,7 @@ import ps5 from "../assets/ps5.svg";
 import { Fragment } from "react";
 
 const Body = () => (
-  <div className="text-mukta">
+  <div className="font-mukta">
     <div className="flex justify-end">
       <div className="flex flex-col-reverse lg:flex-row items-center w-fourteenth">
         <div>

@@ -8,19 +8,25 @@ import Privacy from "./screens/Privacy";
 import Invite from "./screens/Invite";
 import Contact from "./screens/Contact";
 import Signupsuccess from "./screens/Signupsuccess";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/">
-            <Signupsuccess />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/tracklist" element={<Tracklist />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/invite" element={<Invite />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signupsuccess" element={<Signupsuccess />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

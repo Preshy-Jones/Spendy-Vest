@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { Fragment } from "react";
 
 const Body = () => (
-  <div className="text-mukta flex justify-center">
+  <div className="font-mukta flex justify-center">
     <div className="w-4/5">
       <h1 className="text-4.5xl font-semibold w-full text-left my-10">
         PRIVACY POLICY

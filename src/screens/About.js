@@ -8,7 +8,7 @@ import pic3 from "../assets/pic3.png";
 import pic2 from "../assets/pic2.png";
 
 const Body = () => (
-  <div id="home-container2" className="text-mukta">
+  <div id="home-container2" className="font-mukta">
     <div id="main-about-container">
       <div id="about-text">
         <h1 className="text-5.1xl font-semibold">ABOUT US</h1>
