@@ -28,6 +28,11 @@ import rise from "../../assets/rise.svg";
 import paystack from "../../assets/paystack.svg";
 import okra from "../../assets/okra.svg";
 import manwithpig from "../../assets/manwithpig.svg";
+import phonemobile from "../../assets/phonemobile.svg";
+import phonebgmobile from "../../assets/phonebgmobile.svg";
+import phone2body from "../../assets/phone2body.svg";
+import phone2bgmobile from "../../assets/phone2bgmobile.svg";
+import phone2framemobile from "../../assets/phone2framemobile.svg";
 
 const Body = ({ setEmail, email }) => (
   <div className="main font-mukta">
@@ -201,10 +206,10 @@ const Body = ({ setEmail, email }) => (
       </div>
     </div>
     <div>
-      <div className="flex justify-end h-sections">
-        <div className="w-fourteenth flex justify-between">
-          <div className="w-2/5 flex flex-col justify-center">
-            <h1 className="text-2xl text-textash">
+      <div className="flex justify-end h-sections mt-8">
+        <div className="w-fourteenth flex flex-col-reverse items-center md:items-stretch md:flex-row justify-between">
+          <div className="md:w-2/5 flex flex-col justify-center">
+            <h1 className="text-2xl text-textash mb-8">
               GROW YOUR SAVINGS WHILE SPENDING
             </h1>
             <p className="text-4.5xl font-extrabold">
@@ -212,13 +217,29 @@ const Body = ({ setEmail, email }) => (
               YOU INTEREST DAILY IN DOLLARS
             </p>
           </div>
-          <div className="w-2/5 relative">
+          <div className="w-full md:w-2/5 relative md:flex md:flex-col md:items-center">
             <img
-              className="absolute w-full h-full left-0 top-0"
+              className="absolute hidden md:block w-full h-full left-0 top-0"
               src={phonebg}
               alt=""
             />
-            <img className="z-10 absolute top-40" src={phone} alt="" />
+            <img
+              className="z-10 absolute hidden md:block top-40"
+              src={phone}
+              alt=""
+            />
+            {/* <img
+              className="md:absolute block md:hidden w-full h-full md:left-0 md:top-0"
+              src={phonebgmobile}
+              alt=""
+            /> */}
+            <div className="flex justify-center">
+              <img
+                className="z-10 md:absolute block md:hidden md:m-0 md:top-40"
+                src={phonemobile}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -226,13 +247,21 @@ const Body = ({ setEmail, email }) => (
         <div className="w-fourteenth flex justify-between">
           <div className="w-2/5 relative">
             <img
-              className="absolute w-full h-full left-0 top-0"
+              className="absolute hidden md:block w-full h-full left-0 top-0"
               src={phonebg2}
               alt=""
             />
-            <div className="relative top-0 left-40">
+            <div className="relative md:block hidden top-0 left-40">
               <img className="absolute phone2frame" src={phone2frame} alt="" />
               <img className="absolute phone2 " src={phone2} alt="" />
+            </div>
+            <div className="relative top-0 left-40">
+              <img
+                className="absolute phone2frame"
+                src={phone2framemobile}
+                alt=""
+              />
+              <img className="absolute phone2 " src={phone2body} alt="" />
             </div>
           </div>
           <div className="w-2/5 flex flex-col justify-center">
@@ -246,7 +275,7 @@ const Body = ({ setEmail, email }) => (
           </div>
         </div>
       </div>
-      <div className="flex justify-end h-sections">
+      {/* <div className="flex justify-end h-sections">
         <div className="w-fourteenth flex justify-between">
           <div className="w-2/5 flex flex-col justify-center">
             <h1 className="text-2xl text-textash text-left">
@@ -259,7 +288,7 @@ const Body = ({ setEmail, email }) => (
           </div>
           <div className="w-2/5 relative">
             <img
-              className="absolute w-full h-full left-0 top-0"
+              className="absolute hidden md:block w-full h-full left-0 top-0"
               src={phonebg3}
               alt=""
             />
@@ -271,7 +300,7 @@ const Body = ({ setEmail, email }) => (
         <div className="w-fourteenth flex justify-between">
           <div className="w-2/5 relative">
             <img
-              className="absolute w-full h-full left-0 top-0"
+              className="absolute hidden md:block w-full h-full left-0 top-0"
               src={phonebg4}
               alt=""
             />
@@ -301,10 +330,10 @@ const Body = ({ setEmail, email }) => (
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
-    <div>
+    {/* <div>
       <h1 className="text-textshade font-extrabold text-center text-4.5xl">
         FAQ'S
       </h1>
@@ -345,9 +374,9 @@ const Body = ({ setEmail, email }) => (
       >
         VIEW ALL FAQS
       </button>
-    </div>
+    </div> */}
 
-    <div className="bg-secondary py-6">
+    {/* <div className="bg-secondary py-6">
       <div className="flex justify-center">
         <img src={ourpartners} alt="" />
       </div>
@@ -358,7 +387,7 @@ const Body = ({ setEmail, email }) => (
           <img src={rise} alt="" />
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 
