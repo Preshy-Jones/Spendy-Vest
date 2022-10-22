@@ -117,7 +117,7 @@ const Body = ({ setEmail, email }) => (
     </div>
 
     {/* section */}
-    <div className="flex bg-primary py-32 justify-center items-center">
+    <div className="flex bg-primary py-32 justify-center items-center my-8">
       <div className="w-4/5 flex">
         <div className="flex flex-col md:flex-row justify-around items-center">
           <img className="md:w-2/5" src={reminderImage} />
