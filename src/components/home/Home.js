@@ -117,7 +117,7 @@ const Body = ({ setEmail, email }) => (
     </div>
 
     {/* section */}
-    <div className="flex bg-primary py-32 justify-center items-center my-8">
+    <div className="flex bg-primary py-32 justify-center items-center my-[5rem]">
       <div className="w-4/5 flex">
         <div className="flex flex-col md:flex-row justify-around items-center">
           <img className="md:w-2/5" src={reminderImage} />
@@ -131,7 +131,7 @@ const Body = ({ setEmail, email }) => (
     <div>
       <div className="flex justify-center">
         <div className="flex w-4/5">
-          <h1 className="text-4.5xl lg:w-2/5 text-center text-textshade font-mukta font-extrabold ">
+          <h1 className="text-4.5xl lg:w-2/5 text-center text-textshade font-mukta font-extrabold mb-6">
             IN THREE SIMPLE STEPS, YOU START USING THE APP
           </h1>
         </div>
